@@ -1,0 +1,62 @@
+.booking {
+  max-width: 440px;
+  margin: 48px auto;
+  padding: 24px;
+  font-family: Arial, sans-serif;
+}
+
+.booking__form {
+  display: grid;
+  gap: 12px;
+}
+
+.booking__label,
+.booking__times legend {
+  font-weight: 600;
+}
+
+.booking__date,
+.booking__button {
+  padding: 10px 12px;
+  font: inherit;
+}
+
+.booking__times {
+  display: grid;
+  gap: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 16px;
+}
+
+.booking__times label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.booking__button {
+  border: 0;
+  border-radius: 6px;
+  background: #1769aa;
+  color: white;
+  cursor: pointer;
+}
+
+.booking__button:disabled {
+  background: #aaa;
+  cursor: not-allowed;
+}
+
+.booking__message {
+  min-height: 1.5em;
+}
+
+.time-slot--unavailable {
+  color: #c62828;
+  text-decoration: line-through;
+}
+
+.time-slot--available {
+  color: limegreen;
+}
